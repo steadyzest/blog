@@ -28,22 +28,6 @@ const CommentButton = () => (
 
 const ShareBox = ({ url, hasCommentBox }) => (
   <div className="m-share-box">
-    {/* <a
-      href={`https://www.facebook.com/sharer/sharer.php?u=${url}`}
-      title=""
-      className="share-button"
-      onClick={() =>
-        ReactGA.event({
-          category: 'Share',
-          action: 'Facebook Share',
-        })
-      }
-    >
-      <FontAwesomeIcon icon={['fab', 'facebook-f']} />
-    </a> */}
-
-    {hasCommentBox && <CommentButton />}
-
     <a
       className="share-button"
       href="#header"

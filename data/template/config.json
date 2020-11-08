@@ -2,20 +2,20 @@
   "url": "https://steadyzest.github.io",
   "meta": {
     "favicon": "https://i.imgur.com/PO9Y4fT.jpg",
-    "keyword": "steadyzest, blog, JavaScript",
+    "keyword": "steadyzest, blog, JavaScript, react, react-native, nodejs",
     "description": "steadyzest 기술블로그",
     "theme_color": "#384f7c",
     "google_site_verification": "riZBcestky7i9xY__A-5J-2EE65T75X1u-zgbss37Io"
   },
   "name": "steadyzest",
-  "about": "/2018/05/01/about-steadyzest-liu/",
+  "about": "/info/",
   "email": "steadyzestliu@gmail.com",
   "stats": {
     "image": "https://i.imgur.com/VjBWiSt.png",
     "title": "기술블로그",
     "description": "기술블로그"
   },
-  "title": "steadyzest의 블로그",
+  "title": "steadyzest의 기술블로그",
   "gitalk": {
     "repo": "steadyzest.github.io",
     "admin": ["steadyzest"],
@@ -28,30 +28,27 @@
   "License": "by",
   "friends": [
     {
-      "href": "https://steadyzest.github.io",
-      "title": "steadyzest Blog"
+      "href": "https://www.perth.work/",
+      "title": "디자인퍼스"
     }
   ],
   "iconUrl": "https://i.imgur.com/kjt2x52.jpg",
-  "wordings": ["React, react native, node.js", "기술블로그"],
+  "wordings": ["JavaScript, React, react native, node.js", "기술블로그"],
   "gaTrackId": "UA-84737574-3",
   "navbarList": [
+
     {
-      "href": "/guestbook/",
-      "title": "방명록"
+      "href": "/info/",
+      "title": "저자정보"
     },
     {
       "href": "/tags/",
-      "title": "Tags"
-    },
-    {
-      "href": "/2018/05/01/about-steadyzest-liu/",
-      "title": "저자정보"
+      "title": "태그"
     }
   ],
   "redirectors": [
     {
-      "toPath": "/2018/05/01/about-steadyzest-liu/",
+      "toPath": "/info/",
       "fromPath": "/about/"
     }
   ],
@@ -63,6 +60,5 @@
     }
   ],  
   "githubUsername": "steadyzest",
-  "maxPostsInPage": 10,
-  "facebook": "steadyzestblog"
+  "maxPostsInPage": 10  
 }

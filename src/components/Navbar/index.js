@@ -3,8 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import ReactGA from "react-ga";
 
-import GithubCorner from "../GithubCorner";
-
 import NavItem from "./NavItem";
 import { gotoPage } from "../../api/url";
 import "./index.scss";
@@ -44,7 +42,6 @@ const Navbar = () => (
       >
         <FontAwesomeIcon icon={faBars} />
       </button>
-      <GithubCorner url="https://github.com/steadyzest/gatsby-starter-steadyzest-blog" />
       <div
         className="collapse navbar-collapse flex-row-reverse"
         id="navbarSupportedContent"

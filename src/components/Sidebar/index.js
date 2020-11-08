@@ -9,15 +9,7 @@ import Information from "./Information";
 
 import "./index.scss";
 
-const {
-  wordings = [],
-  githubUsername,
-
-  email,
-  iconUrl,
-  about,
-  facebook,
-} = config;
+const { wordings = [], githubUsername, email, iconUrl, about } = config;
 
 const Icon = ({ href, icon }) => (
   <a
@@ -76,7 +68,6 @@ export default () => (
           slug
         }
         frontmatter {
-          id
           title
           url: slug
           date

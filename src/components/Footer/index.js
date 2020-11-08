@@ -20,10 +20,6 @@ const Footer = () => (
             />
             <br />
             The code is open source and available at&nbsp;
-            <ExternalLink
-              href="https://github.com/steadyzest/gatsby-starter-steadyzest-blog"
-              title="steadyzest/gatsby-starter-steadyzest-blog"
-            />
           </p>
           <p className="copyright">
             Copyright&nbsp;

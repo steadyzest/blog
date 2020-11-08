@@ -1,5 +1,5 @@
-const path = require('path');
-const createPaginatedPages = require('gatsby-paginate');
+const path = require("path");
+const createPaginatedPages = require("gatsby-paginate");
 
 module.exports = ({ actions, graphql }) => {
   const { createPage } = actions;
@@ -20,7 +20,6 @@ module.exports = ({ actions, graphql }) => {
               tags
               templateKey
               slug
-              id
               title
               url: slug
               date
@@ -44,16 +43,16 @@ module.exports = ({ actions, graphql }) => {
     createPaginatedPages({
       edges,
       createPage,
-      pageTemplate: 'src/templates/index.js',
+      pageTemplate: "src/templates/index.js",
       context: {
         totalCount: edges.length,
       },
-      pathPrefix: 'pages',
+      pathPrefix: "pages",
       buildPath: (index, pathPrefix) => {
         if (index > 1) {
           return `${pathPrefix}/${index}`;
         }
-        return '/';
+        return "/";
       },
     });
 
@@ -64,7 +63,7 @@ module.exports = ({ actions, graphql }) => {
 
       // 讀取標籤
       if (tags) {
-        tags.forEach(item => tagSet.add(item));
+        tags.forEach((item) => tagSet.add(item));
       }
 
       // 允许自定义地址
@@ -73,7 +72,7 @@ module.exports = ({ actions, graphql }) => {
         $path = slug;
       }
 
-      const component = templateKey || 'blog-post';
+      const component = templateKey || "blog-post";
 
       createPage({
         path: $path,
@@ -91,7 +90,7 @@ module.exports = ({ actions, graphql }) => {
     return tagSet.forEach((tag) => {
       createPage({
         path: `/tag/${tag}`,
-        component: path.resolve('src/templates/tag.js'),
+        component: path.resolve("src/templates/tag.js"),
         context: {
           tag,
         },

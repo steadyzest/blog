@@ -1,11 +1,15 @@
-import React from 'react';
+import React from "react";
 
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-const ExternalLink = ({
-  href, title, target, className, rel,
-}) => (
-  <a href={href} rel={rel} target={target} className={className}>
+const ExternalLink = ({ href, title, target, className, rel }) => (
+  <a
+    href={href}
+    rel={rel}
+    target={target}
+    className={className}
+    style={{ color: "#ff1122" }}
+  >
     {title}
   </a>
 );
@@ -19,9 +23,9 @@ ExternalLink.propTypes = {
 };
 
 ExternalLink.defaultProps = {
-  target: '_blank',
-  className: '',
-  rel: 'external nofollow noopener',
+  target: "_blank",
+  className: "",
+  rel: "external nofollow noopener",
 };
 
 export default ExternalLink;

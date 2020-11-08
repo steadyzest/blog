@@ -29,24 +29,11 @@ const bgWhite = { padding: "10px 30px", background: "white" };
 
 // Prevent webpack window problem
 const isBrowser = typeof window !== "undefined";
-const Gitalk = isBrowser ? require("gitalk") : undefined;
 
 class BlogPost extends Component {
   constructor(props) {
     super(props);
     this.data = this.props.data;
-  }
-
-  componentDidMount() {
-    const { frontmatter, id: graphqlId } = this.data.content.edges[0].node;
-    const { title, id } = frontmatter;
-
-    const GitTalkInstance = new Gitalk({
-      ...gitalk,
-      title,
-      id: id || graphqlId,
-    });
-    GitTalkInstance.render("gitalk-container");
   }
 
   render() {
@@ -71,20 +58,12 @@ class BlogPost extends Component {
         <div className="col-xl-7 col-lg-6 col-md-12 col-sm-12 order-10 content">
           <Content post={html} />
           <div className="m-message" style={bgWhite}>
-            저자정보
-            <ExternalLink
-              href="https://github.com/steadyzest/gatsby-starter-steadyzest-blog"
-              title="github 팔로우 및 별"
-            />
-            or
+            github 페이지&nbsp;&nbsp;
             <ExternalLink
               href="https://github.com/steadyzest/"
               title="Github"
             />
-            。
           </div>
-
-          <div id="gitalk-container" />
         </div>
 
         <ShareBox url={slug} />
@@ -108,7 +87,6 @@ export const pageQuery = graphql`
       slug
     }
     frontmatter {
-      id
       title
       slug
       date

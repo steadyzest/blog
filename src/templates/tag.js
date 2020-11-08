@@ -26,9 +26,7 @@ const TagPage = ({ data, pageContext }) => {
               margin: 15,
             }}
           >
-            {edges.length}
-            &nbsp;Articles in&nbsp;
-            {tag}
+            '{tag}'로 작성된 {edges.length}건의 게시글 발견!
           </div>
           {edges.map(({ node }) => (
             <Card {...node.frontmatter} key={node.id} />
@@ -62,7 +60,6 @@ export const pageQuery = graphql`
         node {
           id
           frontmatter {
-            id
             url: slug
             title
             date

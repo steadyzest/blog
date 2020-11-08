@@ -10,11 +10,7 @@ import "./index.scss";
 const Information = ({ totalCount, posts }) => (
   <div className="d-none d-lg-block information my-2">
     <hr />
-    <p>
-      총&nbsp;
-      {totalCount}
-      &nbsp;게시글
-    </p>
+    <p>총&nbsp;{totalCount}건의 게시글이 있습니다.</p>
     <hr />
     <LatestPost posts={posts} />
     <hr />
