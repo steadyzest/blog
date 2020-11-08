@@ -1,0 +1,68 @@
+{
+  "url": "https://steadyzest.github.io",
+  "meta": {
+    "favicon": "https://i.imgur.com/PO9Y4fT.jpg",
+    "keyword": "steadyzest, blog, JavaScript",
+    "description": "steadyzest 기술블로그",
+    "theme_color": "#384f7c",
+    "google_site_verification": "riZBcestky7i9xY__A-5J-2EE65T75X1u-zgbss37Io"
+  },
+  "name": "steadyzest",
+  "about": "/2018/05/01/about-steadyzest-liu/",
+  "email": "steadyzestliu@gmail.com",
+  "stats": {
+    "image": "https://i.imgur.com/VjBWiSt.png",
+    "title": "기술블로그",
+    "description": "기술블로그"
+  },
+  "title": "steadyzest의 블로그",
+  "gitalk": {
+    "repo": "steadyzest.github.io",
+    "admin": ["steadyzest"],
+    "owner": "steadyzest",
+    "clientID": "18255f031b5e11edd98a",
+    "clientSecret": "2ff6331da9e53f9a91bcc991d38d550c85026714",
+    "pagerDirection": "first",
+    "distractionFreeMode": true
+  },
+  "License": "by",
+  "friends": [
+    {
+      "href": "https://steadyzest.github.io",
+      "title": "steadyzest Blog"
+    }
+  ],
+  "iconUrl": "https://i.imgur.com/kjt2x52.jpg",
+  "wordings": ["React, react native, node.js", "기술블로그"],
+  "gaTrackId": "UA-84737574-3",
+  "navbarList": [
+    {
+      "href": "/guestbook/",
+      "title": "방명록"
+    },
+    {
+      "href": "/tags/",
+      "title": "Tags"
+    },
+    {
+      "href": "/2018/05/01/about-steadyzest-liu/",
+      "title": "저자정보"
+    }
+  ],
+  "redirectors": [
+    {
+      "toPath": "/2018/05/01/about-steadyzest-liu/",
+      "fromPath": "/about/"
+    }
+  ],
+  "gaOptimizeId": "GTM-WHP7SC5",
+  "carouselItems": [
+    {
+      "src": "https://i.imgur.com/gw91CuI.jpg",
+      "target": "/stats/"
+    }
+  ],  
+  "githubUsername": "steadyzest",
+  "maxPostsInPage": 10,
+  "facebook": "steadyzestblog"
+}
