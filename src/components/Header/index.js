@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './index.scss';
+import React from "react";
+import PropTypes from "prop-types";
+import "./index.scss";
 
-import JueJin from '../JueJin';
+import JueJin from "../JueJin";
 
-import { parseImgur } from '../../api/images';
+import { parseImgur } from "../../api/images";
 
 const Header = ({
   img,
@@ -27,23 +27,22 @@ const Header = ({
       {subTitle && (
         <div className="u-subtitle">
           <div className="m-left">
-            {authorImage && (
+            {/* {authorImage && (
               <img
-                src={parseImgur(authorImage, 'small-square')}
+                src={parseImgur(authorImage, "small-square")}
                 className="author-image"
                 alt={authorName}
               />
-            )}
-            <span className="author-name">{authorName}</span>
+            )} */}
+            {/* <span className="author-name">{authorName}</span> */}
           </div>
           <span className="text">{subTitle}</span>
-          {jueJinPostLink &&
-            jueJinLikeIconLink && (
-              <JueJin
-                jueJinPostLink={jueJinPostLink}
-                jueJinLikeIconLink={jueJinLikeIconLink}
-              />
-            )}
+          {jueJinPostLink && jueJinLikeIconLink && (
+            <JueJin
+              jueJinPostLink={jueJinPostLink}
+              jueJinLikeIconLink={jueJinLikeIconLink}
+            />
+          )}
         </div>
       )}
     </div>
@@ -61,12 +60,12 @@ Header.propTypes = {
 };
 
 Header.defaultProps = {
-  title: '',
-  subTitle: '',
-  authorName: '',
-  authorImage: '',
-  jueJinPostLink: '',
-  jueJinLikeIconLink: '',
+  title: "",
+  subTitle: "",
+  authorName: "",
+  authorImage: "",
+  jueJinPostLink: "",
+  jueJinLikeIconLink: "",
 };
 
 export default Header;

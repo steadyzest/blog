@@ -2,7 +2,7 @@
   "name": "blog",
   "description": "steadyzest's Blog",
   "version": "1.0.0",
-  "author": "steadyzest Liu <steadyzestliu@gmail.com>",
+  "author": "steadyzest Liu <steadyzest@gmail.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.4",
     "@fortawesome/free-brands-svg-icons": "^5.3.1",

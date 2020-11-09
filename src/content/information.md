@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: 자기소개
 slug: /info/
-date: 2020-11-08T22:00:00.000Z
+date: 2020-11-08
 description: 간단한 자기소개 페이지
 headerImage: https://i.imgur.com/mich3dS.jpg
 tags:

@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     title: "steadyzest&apos;s Blog",
     description: "Front End Technical Blog - steadyzest",
-    siteUrl: "https://steadyzest.me",
+    siteUrl: "https://steadyzest.github.io",
     author: "steadyzest",
   },
   plugins: [
